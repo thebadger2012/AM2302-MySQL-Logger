@@ -8,7 +8,7 @@
 #
 # By Pete Tomlinson, 16/05/2014
 #
-# Adapted from Adafruit script
+# Adapted heavily from Adafruit scripts - thankyou Adafuit!
 #
 # ==========================================================================
 
@@ -22,6 +22,9 @@ import MySQLdb
 # ===========================================================================
 # Variables
 # ===========================================================================
+
+# set your sensor type here
+stype = 2302
 
 # pin AM2302 is connected to on your pi
 pin = 17
@@ -60,7 +63,7 @@ cursor = db.cursor()
 while(True):
   # Run the DHT program to get the humidity and temperature readings!
 
-  output = subprocess.check_output(["./Adafruit_DHT", "2302", str(pin)]);
+  output = subprocess.check_output(["./Adafruit_DHT", str(stype), str(pin)]);
   matches = re.search("Temp =\s+([0-9.]+)", output)
   if (not matches):
         time.sleep(3)
