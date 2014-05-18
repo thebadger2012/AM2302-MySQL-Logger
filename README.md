@@ -17,7 +17,7 @@ What you Need
 
 1) MySQL Server. There are lots of good tutorials for installing MySQL for the Pi, so go forth and Google. Or, if you already have a MySQL Server, skip to instruction 2.
 
-2) A database in the MySQL Server. Actually, all you really need is a table with the four following columns:
+2) A database in the MySQL Server with a database and user that you can connect to and execute INSERT statements against. You will need a table with the four following columns, which have self-explanatory names:
           
               capturetime, temperature, humidity, sensornum
               
