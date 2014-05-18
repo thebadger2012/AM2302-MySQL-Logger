@@ -48,10 +48,10 @@ def WrtLogFile( message ):
 # MySQL Database Details
 # ===========================================================================
 
-server  = 'mypi.ca'
-user    = 'mypi_wdadmin'
-pw      = '#N0m2m0#'
-dbname  = 'mypi_wdN0M2M0'
+server  = 'your_database_server'
+user    = 'database_user'
+pw      = 'database_user_password'
+dbname  = 'database'
 
 db = MySQLdb.connect(server, user, pw, dbname)
 cursor = db.cursor()
