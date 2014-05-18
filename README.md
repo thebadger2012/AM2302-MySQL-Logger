@@ -10,4 +10,9 @@ Follow of the the Adafruit instructions to make your newly-minted temperature & 
 
 Look in the forum for more information re. the older google docs.
 
-Once you have that working, you will have all the crucial components, including knowledge of the sensor and how it is integrated into python.
+Once you have that working, you will have most the crucial components, including knowledge of the sensor and how it is integrated into python.
+
+What you Need
+=============
+
+1) MySQL and a database. There are lots of good tutorials for acquiring, installing, and configuring MySQL for the Pi, so I won't waste time here with an example.
