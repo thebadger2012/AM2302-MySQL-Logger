@@ -33,3 +33,8 @@ What you Need
                            `sensornumber` int(11) NOT NULL,
                            PRIMARY KEY (`id`)
                           )
+
+3) Python Library MySQLdb for connecting your python script to your database. I installed the library on my Pi using apt-get:
+              sudo apt-get install python-mysqldb
+             
+             
