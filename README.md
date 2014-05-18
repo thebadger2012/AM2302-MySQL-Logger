@@ -15,6 +15,8 @@ Once you have that working, you will have most the crucial components, including
 What you Need
 =============
 
+1) A Raspberry Pi with the latest Raspbian installation.
+
 1) MySQL Server. There are lots of good tutorials for installing MySQL for the Pi, so go forth and Google. Or, if you already have a MySQL Server, skip to instruction 2.
 
 2) A database in the MySQL Server with a database and user that you can connect to and execute INSERT statements against. You will need a table with the four following columns, which have self-explanatory names:
@@ -38,4 +40,9 @@ What you Need
 
               sudo apt-get install python-mysqldb
              
-             
+4) One (or more) of the following Temperature and Humidity sensors:
+
+              DHT11, DHT22, AM2302
+              
+   I picked the AM2302 because it did not require any other parts such as resistors to attach it to the Pi. It also comes in a small plastic case which will be useful if you want to mount the sensor onto something.
+   
