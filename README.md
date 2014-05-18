@@ -15,4 +15,21 @@ Once you have that working, you will have most the crucial components, including
 What you Need
 =============
 
-1) MySQL and a database. There are lots of good tutorials for acquiring, installing, and configuring MySQL for the Pi, so I won't waste time here with an example.
+1) MySQL Server. There are lots of good tutorials for installing MySQL for the Pi, so go forth and Google. Or, if you already have a MySQL Server, skip to instruction 2.
+
+2) A database in the MySQL Server. Actually, all you really need is a table with the four following columns:
+          
+              capturetime, temperature, humidity, sensornum
+              
+   I decided to include a sensornum column in the event you are capturing data from more than one sensor (i.e. one indoors    and one outdoors).
+   
+   A stand-alone table would have a create script like this:
+   
+              CREATE TABLE `wd_temp_humidity` (
+                           `id` int(11) NOT NULL AUTO_INCREMENT,
+                           `capturetime` datetime DEFAULT NULL,
+                           `temperature` decimal(5,1) DEFAULT NULL,
+                           `humidity` decimal(5,1) DEFAULT NULL,
+                           `sensornumber` int(11) NOT NULL,
+                           PRIMARY KEY (`id`)
+                          )
